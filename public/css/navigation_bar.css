@@ -1,0 +1,76 @@
+.sf-logo {
+    margin-top: 5px;
+}
+.sf-logo a img {
+        float: left;
+}
+.sf-logo a span {
+        font-size: 24px;
+        color: #d0021b;
+        line-height: 30px;
+        font-family: 'open_sansbold', Arial;
+}
+.sf-logo a div {
+    float: left;
+    padding-left: 15px;
+}
+.sf-logo a em {
+    display: block;
+    font-style: normal;
+    font-size: 8px;
+    color: #000000;
+    text-align: left;
+}
+.create-add:hover, .bookings:hover, .your-add:hover {
+    background-color: #d0021b;
+    color: white;
+    height: 100%;
+}
+nav{
+    background-color:white;
+    z-index:+1;
+}
+#myNavbar ul li a {
+    color: #d0021b;
+    font-size: 18px;
+}
+#myNavbar ul li a:hover {
+    background-color: #d0021b;
+    color: white;
+}
+
+#myNavbar ul li a:focus {
+    background-color: #d0021b;
+    color: white;
+    font-weight: 700;
+}
+.navbar-nav > .active > a {
+    background-color: #d0021b;
+    color: white !important;
+}
+.icon-bar {
+    background-color:#d0021b;
+}
+.navbar {
+    box-shadow: 0 3px 2px -2px rgba(0,0,0,.2);
+}
+.nav_active{
+    background-color: #d0021b;
+    color:white;
+}
+.myAccount:hover {
+    width: 270px;
+}
+.myAccount {
+    width: 50px;
+    height: 50px;
+    overflow:hidden;
+    background: white;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+.myAccount li a{
+    font-size:30px!important;
+    padding:10px!important;
+    margin-right:10px!important;
+}

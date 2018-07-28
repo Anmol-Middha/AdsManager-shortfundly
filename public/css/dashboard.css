@@ -1,0 +1,84 @@
+.banners {
+    font-size: 135px;
+    color:#d0021b;
+    background-color:#ffffff;
+    margin:50px;
+    margin-top:0px;
+    padding-top:5px;
+}
+.banners:hover, .banners a:hover {
+    text-decoration: none !important;
+    background-color: #d0021b;
+}
+.banners a{
+    color:#d0021b;
+}
+.banners p{
+    background-color:#d0021b;
+    color:white;
+    font-size:20px;
+    text-align:center;
+    margin:0 0 0;
+}
+.banners p:hover{
+    background-color:white;
+    color:#d0021b;
+}
+#details1, #details2, #details3{
+    background-color:white;
+    color:#5a5656;
+    font-size:20px;
+    text-align:justify;
+}
+table {
+    font-size: 23px;
+    text-align: center;
+    background-color:white;
+}
+
+.table > tbody > tr > td{
+    border-top: 0px!important;
+}
+.sidenav {
+    height: 100%;
+    width: 75px;
+    position: fixed; 
+    z-index: 1; 
+    top: 50px; 
+    left: 0;
+    background-color: #d0021b; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+.sidenav h2 {
+    position:fixed;
+    padding: 8px 8px 8px 8px;
+    font-size: 25px;
+    color: white;
+    transition: 0.3s;
+    transform:rotate(-90deg);
+    white-space:nowrap;
+    margin-top:250px;
+    margin-left:-25px;
+}
+.sidenav h2 small{
+    color:white;
+}
+.sidenav select{
+    color:#d0021b;
+    border-color:#d0021b;
+    border-radius:15px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

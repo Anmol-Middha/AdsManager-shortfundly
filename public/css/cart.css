@@ -1,0 +1,35 @@
+.cartBoard{
+	margin-top:70px;
+}
+.itemBoard{
+	background-color: white;
+	margin-left: 45px!important; 
+}
+.itemList{
+	margin:20px 25px;
+	padding-top: 20px;
+}
+@media only screen and (max-width: 1024px){
+	.billBoard{
+		position:relative!important;
+		top:0px!important;
+		right:0px!important;
+		bottom:0px!important;
+		margin: 0px 15px!important;
+		padding: 15px!important;
+	}
+	.itemBoard{
+		margin: 0px 15px!important;
+	}
+}
+.billBoard{
+	background-color: white;	
+	max-height: 500px;
+	position:fixed;
+	top:272px;
+	right:60px;
+	bottom: 120px;
+}
+.modifyItem i{
+	margin:5px;
+}

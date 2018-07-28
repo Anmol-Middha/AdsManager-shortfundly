@@ -1,0 +1,53 @@
+.faq-h1{
+    font-size:60px;
+    color:white;
+}
+.faq-h4{
+    font-size:20px;
+    margin-bottom:15px;
+    color:white;
+}
+#img-bckgrnd div:first-child{
+    padding-top:150px;
+    margin-left:35px;
+}
+#srchbtn{
+    height:45px;
+}
+#helping-bars a{
+    display:block;
+    width:100%;
+    height:200px;
+    color:white;
+    background-color:#d0021b;
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:20px;
+}
+.helping-icons{
+    font-size:100px;
+}
+#img-bckgrnd {
+    background: url('../images/bg-featured-edited.jpg') no-repeat;
+    background-size:cover;
+    height:600px;
+}
+.container-fluid{
+    padding:0px;
+}
+.panel-default{
+    margin-top:20px; 
+}
+.panel-heading{
+    height:70px;
+}
+.panel-heading a{
+    text-decoration: none;
+    color:#d0021b;
+    font-size: 20px;
+}
+.panel-body p{
+    font-size:18px;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "shortfundly-adsmanager",
+  "version": "1.0.0",
+  "description": "Ads manager of Shortfundly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anmol-Middha/shortfundly-adsmanager.git"
+  },
+  "keywords": [
+    "adsmanager",
+    "shortfundly"
+  ],
+  "author": "Anmol-Middha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anmol-Middha/shortfundly-adsmanager/issues"
+  },
+  "homepage": "https://github.com/Anmol-Middha/shortfundly-adsmanager#readme",
+  "devDependencies": {
+    "firebase-tools": "^3.19.3",
+    "fullpage.js": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "page": "^1.8.6"
+  },
+  "dependencies": {
+    "source-map": "^0.7.3"
+  }
+}

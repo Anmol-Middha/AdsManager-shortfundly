@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Shortfundly AdsManager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fullPage.js-master/src/fullpage.css"  media="(min-width: 425px)">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navigation_bar.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script async type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script async type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="fullPage.js-master/src/fullpage.js" media="(min-width: 425px)"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- navigation bar -->
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
+                <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
+            </div>
+            <div class="navbar-header col-md-offset-9">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#firstPage" class="Join_us_nav">Join Us</a></li>
+                    <li><a href="#secondPage" class="How_it_works_nav">How it works?</a></li>
+                    <li><a href="#thirdPage" class="About_us_nav">About Us</a></li>
+                    <li><a href="#fourthPage" class="Appreciations_nav">Appreciations</a></li>
+                    <li><a href="#fifthPage" class="Contacts_nav">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- navigation bar ends-->
+<!--Join Us-->
+<div id="fullpage">
+<div class="section Join_us">
+<div id="Join_us" class="container-fluid" style="height:100%">
+    <div class="homebanner">
+        <div class="container">
+            <div class="row ">
+                <!--login box starts-->
+                <div class="login-box">
+                    <div class="row btn-box">
+                        <div class="col-xs-6 login-div"><button class="login-btn" onclick="loginform()" focus>Login</button></div>
+                        <div class="col-xs-6 signup-div"><button class="signup-btn" onclick="signupform()">Sign Up</button></div>
+                    </div>
+                    <!--login form-->
+                    <form id="login-form" method="POST" action="https://adsmanager.Shortfundly.com/login" accept-charset="UTF-8" role="form" autocomplete="off">
+                        <div class="clearfix">
+                            <center><h1 class="title-font">Welcome<br><small>To get started, please log-in below.</small></h1></center>
+                        </div>
+                        <div class="form-group">
+                            <div class="clearfix">
+                                <label for="email" class="label-control">Email</label>
+                                <input class="form-control" id="email" name="email" type="email">
+                            </div>
+                            <div class="clearfix ">
+                                <label for="password" class="label-control">Password</label>
+                                <input class="form-control" id="password" name="password" type="password">
+                            </div>
+                            <div class="clearfix">
+                                <a href="https://adsmanager.Shortfundly.com/password/reset/request" class="pull-right">
+                                    Forgot password?
+                                </a>
+                                <div class="checkbox-control">
+                                    <input id="remember_me" name="remember" type="checkbox">
+                                    <label for="remember_me">Remember me</label>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="btn-set">
+                                    <input class="btn btn-block" type="button" value="Login" onclick="login()">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--login-form ends-->
+                    <!--signup-form-starts-->
+                    <div class="row" id="signup-form">
+                        <div class="col-md-6 signup-form-input">
+                            <form method="POST" action="https://adsmanager.Shortfundly.com/login" accept-charset="UTF-8" role="form" autocomplete="off">
+                                <div class="clearfix">
+                                    <center><h1><small>Create Account</small></h1></center>
+                                </div>
+                                <div class="form-group">
+                                    <div class="clearfix">
+                                        <label class="label-control">Username</label>
+                                        <input class="form-control" id="email" name="email" type="email">
+                                    </div>
+                                    <div class="clearfix">
+                                        <label for="email" class="label-control">Email</label>
+                                        <input class="form-control" id="email" name="email" type="email">
+                                    </div>
+                                    <div class="clearfix ">
+                                        <label for="password" class="label-control">Password</label>
+                                        <input class="form-control" id="password" name="password" type="password">
+                                    </div>
+                                    <div class="clearfix">
+                                        <div>
+                                            <input class="btn btn-block" type="button" value="Signup" onclick="signup()">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 signup-form-details">
+                            <center><h1><small>Why Shortfundly?</small></h1></center>
+                            <center>
+                                <h3><i class="fas fa-clock" id="what-get-icon" aria-hidden="true"></i>&nbsp;&nbsp;Time saving</h3>
+                                <p class="text-muted">Our booking solution is open 24-hours a day for you to book your campaign at any time.</p>
+                            </center>
+
+                            <center>
+                                <h3>
+                                    <i class="fas fa-desktop" id="what-get-icon" aria-hidden="true"></i>&nbsp;&nbsp;Easy Booking
+                                </h3>
+                                <p class="text-muted">Book campaigns using your own creatives and choose the appropriate targeting and budget that works best for you.</p>
+                            </center>
+
+                            <center>
+
+                                <h3>
+                                    <i class="far fa-money-bill-alt" id="what-get-icon" aria-hidden="true"></i>&nbsp;&nbsp;Manage all Campaigns
+                                </h3>
+                                <p class="text-muted">From forecasting avails, to pacing and reporting, get all the info you need to set up and manage your campaigns.</p>
+                            </center>
+                            <center>
+                                <h3>
+                                    <i class="fas fa-briefcase" id="what-get-icon" aria-hidden="true"></i>&nbsp;&nbsp;No Insertion Campaign
+                                </h3>
+                                <p class="text-muted">No paperwork, no hassle. Launch your campaigns faster and speed up turnaround times.</p>
+                            </center>
+                        </div>
+                    </div>
+                    <!--signupform ends-->
+                </div>
+                <!--login box ends-->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--Join us ends-->
+<!--How it works-->
+<div class="section How_it_works">
+<div id="How_it_works" class="container-fluid" style="height: 100%">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item screen-a active">
+                <br><center><h2>How it works? <br /><br /> Step 1</h2></center>
+            </div>
+            <div class="item screen-b">
+                <br><center><h2>How it works? <br /><br /> Step 2</h2></center>
+            </div>
+            <div class="item screen-c">
+                <br><center><h2>How it works? <br /><br /> Step 3</h2></center>
+            </div>
+            <div class="item screen-d">
+                <br><center><h2>How it works? <br /><br /> Step 4</h2></center>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+</div>
+<!--How it works ends-->
+<!--About Us-->
+<div class="section About_us fp-auto-height">
+<div id="About_us" class="container-fluid">
+    <div>
+        <h1><i class="fa fa-desktop" aria-hidden="true"><span class="dot title-font">About us.</span></i></h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <article class="animated fadeInLeft">
+                <h4><strong>Use Shortfundly advertising to engage millions of users around the world.</strong></h4><p>Use Shortfundly advertising to engage millions of users around the world. Successful advertising campaigns rely on innovative platforms and intelligent distribution. With Shortfundly’s advertising platform, brands are provided with a unique opportunity to engage millions of active users all over the world.</p><p>Mobile advertising on Shortfundly relies on the video browsing. User advertisement is displayed to every video getting views more than 10,000. In addition, advertisers are invited to create mobile phone takeovers by adding brand elements, such as color and messaging, to the native Shortfundly interface — further immersing users in a complete brand experience.nd safe environment with a variety of custom display advertising solutions to connect to their audiences at scale.</p>
+            </article>
+        </div>
+        <div class="col-md-1 col-md-offset-1"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+        <div class="col-md-4 content-text">
+            <div class="animated fadeInRight">
+                <h5 class="subtitle-font">Success stories</h5>
+                <p>Successful mobile advertising campaigns rely on innovative platforms and intelligent distribution. With Shortfundly’s advertising platform, brands are provided with a unique opportunity to engage millions of active users all over the world.</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left mission">
+            <center><h3>Mission line of Shortfundly</h3></center><br>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+                <img src="https://www.shortfundly.com/tpl/main/images/linkedin-sf.jpg" class="img-responsive center-block" />
+                <p>Find the LinkedIn for <strong>short filmmakers!</strong></p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+                <img src="https://www.shortfundly.com/tpl/main/images/explore.jpg" class="img-responsive center-block" />
+                <p>Discover and crowdfund <strong>your short film!</strong></p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+                <img src="https://www.shortfundly.com/tpl/main/images/idea.jpg" class="img-responsive center-block" />
+                <p>Evaluate your skill as <strong>a short filmmaker!</strong></p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+                <img src="https://www.shortfundly.com/tpl/main/images/talent.jpg" class="img-responsive center-block" />
+                <p>Prove your talent to <strong>the outside world!</strong></p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <center><h2>All under a single roof <span>'Shortfundly'.</span></h2></center>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--About Us ends-->
+<!--Press Appreciation-->
+<div class="section Appreciations fp-auto-height">
+<div id="Appreciations" class="container-fluid col-12 text-center">
+    <h1>Appreciations from press</h1>
+    <br><br><br><br>
+    <div class="row">
+        <div class="col-sm-3 news_icon">
+            <a href="https://angel.co/shortfundly/press" target="_blank"><img src="https://www.shortfundly.com/tpl/main/v4/images/press-one.jpg" class="d-block img-fluid mx-auto" /></a>
+        </div>
+        <div class="col-sm-3 news_icon">
+            <a href="https://angel.co/shortfundly/press" target="_blank"><img src="https://www.shortfundly.com/tpl/main/v4/images/press-two.jpg" class="d-block img-fluid mx-auto" /></a>
+        </div>
+        <div class="col-sm-3 news_icon">
+            <a href="https://angel.co/shortfundly/press" target="_blank"><img src="https://www.shortfundly.com/tpl/main/v4/images/press-three.jpg" class="d-block img-fluid mx-auto" /></a>
+        </div>
+        <div class="col-sm-3 news_icon">
+            <a href="https://angel.co/shortfundly/press" target="_blank"><img src="https://www.shortfundly.com/tpl/main/v4/images/press-four.jpg" class="d-block img-fluid mx-auto" /></a>
+        </div>
+        <div class="col-sm-3 news_icon">
+            <a href="https://angel.co/shortfundly/press" target="_blank"><img src="https://www.shortfundly.com/tpl/main/v4/images/press-five.jpg" class="d-block img-fluid mx-auto" /></a>
+        </div>
+        <div class="col-sm-3 news_icon">
+            <a href="https://angel.co/shortfundly/press" target="_blank"><img src="https://www.shortfundly.com/tpl/main/v4/images/press-six.jpg" class="d-block img-fluid mx-auto" /></a>
+        </div>
+        <div class="col-sm-3 news_icon">
+            <a href="https://angel.co/shortfundly/press" target="_blank"><img src="https://www.shortfundly.com/tpl/main/v4/images/press-seven.jpg" class="d-block img-fluid mx-auto" /></a>
+        </div>
+        <div class="col-sm-3 news_icon">
+            <a href="https://angel.co/shortfundly/press" target="_blank"><img src="https://www.shortfundly.com/tpl/main/v4/images/press-eight.jpg" class="d-block img-fluid mx-auto" /></a>
+        </div>
+    </div>
+</div>
+</div>
+<!--Press Appreciation ends-->
+<!--Contact Us-->
+<div class="section Contacts fp-auto-height">
+<div id="Contacts" class="container-fluid">
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row social-div">
+                        <div class="col-xs-4">
+                            <a class="social-network-icons" target="_blank" rel="noopener" href="https://www.facebook.com/Shortfundly/"><center><i class="fab fa-facebook"></i></center></a>
+                        </div>
+                        <div class="col-xs-4 social-network-icons">
+                            <a class="social-network-icons" target="_blank" rel="noopener" href="https://plus.google.com/+Shortfundly"><center><i class="fab fa-google-plus"></i></center></a>
+                        </div>
+                        <div class="col-xs-4 social-network-icons">
+                            <a class="social-network-icons" target="_blank" rel="noopener" href="https://twitter.com/Shortfundly"><center><i class="fab fa-twitter"></i></center></a>
+                        </div>
+                        <div class="row social-div">
+                            <div class="col-xs-4 social-network-icons">
+                                <a class="social-network-icons" target="_blank" rel="noopener" href="https://www.instagram.com/Shortfundly/"><center><i class="fab fa-instagram"></i></center></a>
+                            </div>
+                            <div class="col-xs-4 social-network-icons">
+                                <a class="social-network-icons" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCtz1lDuJXH7ShIa6n4UAEAg"><center><i class="fab fa-youtube"></i></center></a>
+                            </div>
+                            <div class="col-xs-4 social-network-icons">
+                                <a class="social-network-icons" target="_blank" rel="noopener" href="https://www.linkedin.com/company/true-software-scandinavia-ab"><center><i class="fab fa-linkedin"></i></center></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <center>
+                                <ul class="footer-li" type="none">
+                                    <li><a href="">Blog</a></li>
+                                    <br>
+                                    <li><a href="">Shortfilm Promotion</a></li>
+                                    <br>
+                                    <li><a href="">Careers</a></li>
+                                    <br>
+                                    <li><a href="">Press</a></li>
+                                    <br>
+                                </ul>
+                            </center>
+                        </div>
+                        <div class="col-md-6">
+                            <center>
+                                <ul class="footer-li" type="none">
+                                    <li><a href="">Developers</a></li>
+                                    <br>
+                                    <li><a href="">Testimonials</a></li>
+                                    <br>
+                                    <li><a href="">FAQ's</a></li>
+                                    <br>
+                                </ul>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr>
+                <center>Shortfundly Copyright &copy; 2017, All rights reserved</center>
+                <center><a class="footer-a " href="">Advertise</a>  |  <a class="footer-a" href="">Terms & Conditions</a>  |  <a class="footer-a" href="">Privacy Policy</a>  |  <a class="footer-a" href="">Feedback</a></center>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+</div>
+<!--Contact Us ends-->
+<script type="text/javascript">
+	new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true,
+	anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage']
+});
+fullpage_api.setAllowScrolling(true);
+</script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA2IbPwiFKrBGSWo7W_eu7E-ndZuq7zqho",
+    authDomain: "shortfundly-ads-manager.firebaseapp.com",
+    databaseURL: "https://shortfundly-ads-manager.firebaseio.com",
+    projectId: "shortfundly-ads-manager",
+    storageBucket: "shortfundly-ads-manager.appspot.com",
+    messagingSenderId: "495499402600"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
+<!--Document ends-->

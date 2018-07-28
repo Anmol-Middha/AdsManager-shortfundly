@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Shortfundly AdsManager</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- fontawesome cdn-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="fullpage.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="fullPage.js-master/src/fullpage.css">
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/navigation_bar.css" />
+<link rel="stylesheet" href="css/settings.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script async type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- navigation bar -->
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sf-logo col-xl-3 col-lg-3 col-md-3 col-sm-7 col-8">
+                <a href="https://www.shortfundly.com/"><img src="https://www.shortfundly.com/tpl/main/v4/images/logo-red.svg" class="img-fluid"><div><span>Shortfundly</span> <em>A platform for creative film makers</em></div></a>
+            </div>
+            <div class="navbar-header col-md-offset-9">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="ads.html">Ads</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right myAccount">
+                    <li><a class="pull-right nav navbar-nav"><i class="fas fa-user-circle"></i></a></li>
+                    <li><a href="settings.html" class="pull-right nav navbar-nav"><i class="fas fa-cog"></i></a></li>
+                    <li><a href="cart.html" class="pull-right nav navbar-nav"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="index.html" class="pull-right nav navbar-nav"><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- navigation bar ends-->
+<div class="container-fluid" style="padding-top:100px;">
+    <h2 class="page-heading">Settings</h2>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+        <li class="breadcrumb-item active">Settings</li>
+    </ol>
+    <div class="panel settings-default">
+        <div class="settings-heading" role="tab">
+            <h2 class="settings-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#Personal_settings" aria-expanded="false" aria-controls="collapseOne">
+                    Personal Details
+                </a>
+            </h2>
+        </div>
+        <div id="Personal_settings" class="settings-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="settings-body">
+                <h4 class="text-muted">Name:</h4>
+                <h4 class="text-muted">Email:</h4>
+                <br>
+                <h4 class="text-muted">Company Name:</h4>
+                <h4 class="text-muted">Phone:</h4>
+                <h4 class="text-muted">Street & No.:</h4>
+                <h4 class="text-muted">City:</h4>
+                <h4 class="text-muted">State / Province:</h4>
+                <h4 class="text-muted">Country:</h4>
+                <h4 class="text-muted">Zip / PostalCode:</h4>
+                <h4 class="text-muted">Time zone:</h4>
+                <h4 class="text-muted">Website</h4>
+                <h4 class="text-muted">Company Description</h4>
+                <h4 class="text-muted">Status</h4>
+            </div>
+        </div>
+    </div>
+    <div class="panel settings-default">
+        <div class="settings-heading" role="tab">
+            <h2 class="settings-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#billing_settings" aria-expanded="false" aria-controls="collapseOne">
+                    Billing Details
+                </a>
+            </h2>
+        </div>
+        <div id="billing_settings" class="settings-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="settings-body">
+                <h4 class="text-muted">Billing contact name:</h4>
+                <h4 class="text-muted">Billing Email:</h4>
+                <h4 class="text-muted">Phone:</h4>
+                <h4 class="text-muted">Street & No.:</h4>
+                <h4 class="text-muted">City:</h4>
+                <h4 class="text-muted">State / Province:</h4>
+                <h4 class="text-muted">Country:</h4>
+                <h4 class="text-muted">Zip / PostalCode:</h4>
+                <h4 class="text-muted">GST:</h4>
+                <br>
+                <h2>Payments</h2>
+                <h4 class="text-muted">Currency</h4>
+            </div>
+        </div>
+    </div>
+    <div class="panel settings-default">
+        <div class="settings-heading" role="tab">
+            <h2 class="settings-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#Documents" aria-expanded="false" aria-controls="collapseOne">
+                    Billing Details
+                </a>
+            </h2>
+        </div>
+        <div id="Documents" class="settings-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="settings-body">
+                <h3>TERMS AND CONDITIONS</h3><br>
+                <h4>Shortfundly Terms and Conditions</h4>
+                <h4 class="text-muted">Version:</h4>
+                <h4 class="text-muted">Accepted:</h4><br><br>
+                <h4>Shortfundly Terms of Service</h4>
+                <h4 class="text-muted">Version:</h4>
+                <h4 class="text-muted">Accepted:</h4><br><br>
+                <h3>Privacy Policy</h3><br>
+                <h4>Shortfundly Privacy Poicy</h4>
+                <h4 class="text-muted">Version:</h4>
+                <h4 class="text-muted">Accepted:</h4><br><br>
+            </div>
+        </div>
+    </div>
+    <button class="btn ad-btn">Change Account Details</button>
+    <button class="btn ad-btn">Change Password</button>
+</div>
+</body>
+</html>

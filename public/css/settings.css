@@ -1,0 +1,13 @@
+.settings-default{
+ 
+}
+
+.settings-title a{
+	text-decoration:none;
+	font-size: 23px;
+    color:black;
+    padding:5px;
+}
+.settings-body p{
+    font-size:18px;
+}

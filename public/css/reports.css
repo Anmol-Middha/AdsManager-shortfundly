@@ -1,0 +1,28 @@
+.reports-fit {
+    white-space: nowrap;
+    margin:0px;
+}
+#download-report-btn, #schedule-report-btn {
+    margin-top: 10px;
+    white-space: normal
+}
+#download_report {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    background: linear-gradient(to right, #ed213a, #93291e);
+    color: white;
+    padding: 15px;
+    width: 100%;
+}
+#schedule_report {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(to right, #ed213a, #93291e);
+    color: white;
+    width: 100%;
+}

@@ -1,0 +1,167 @@
+#Join_us {
+    padding-top: 80px;
+    background: linear-gradient(45deg, #c70d1d 1%,#d23f0d 30%,#f39a21 100%);
+}
+.homebanner {
+    background-size: cover;
+    padding: 70px 0px;
+}
+.login-box {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    height:520px;
+    position: relative;
+}
+.btn-box {
+    margin: 0px;
+}
+.login-btn, .signup-btn {
+    width: 100%;
+    height: 55px;
+    border-top-left-radius: 5px;
+    background-color: white;
+    color: #d0021b;
+    border: 2px solid #d0021b;
+    font-weight: 700;
+}
+.signup-btn {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 0px;
+}
+.login-btn:focus, .signup-btn:focus{
+    background-color: #d0021b;
+    color: white;
+    border-bottom: 5px solid black;
+}
+.login-div, .signup-div {
+    padding: 0px;
+}
+#login-form {
+    position: absolute;
+    left: 15px;
+    top: 70px;
+    right: 15px;
+}
+#signup-form {
+    visibility: hidden;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+}
+#signup-form form {
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    right: 15px;
+    bottom: 0px;
+}
+.signup-form-input, .signup-form-details {
+    height: 100%;
+    padding: 15px;
+    padding-top: 5px
+}
+.signup-form-details h3 {
+    color: #d0021b;
+}
+#How_it_works {
+    padding:0px;
+}
+.carousel-inner, .screen-a, .screen-b, .screen-c, .screen-d {
+    height: 100%;
+    color: white;
+}
+.screen-a {
+    background: linear-gradient(-134deg, #29c9d1 0%,#29d1a6 100%);
+    padding-top: 80px;
+}
+.screen-b {
+    background: linear-gradient(45deg, #439be5 0%,#8943e5 100%);
+    padding-top:80px; 
+}
+.screen-c {
+    background: linear-gradient(-135deg, #7fc637 0%,#90e23d 100%);
+    padding-top: 80px;
+}
+.screen-d {
+    background: linear-gradient(-135deg, #ebbc0b 0%,#e58c43 100%);
+    padding-top: 80px;
+}
+.screen-a h2, .screen-b h2, .screen-c h2, .screen-d h2 {
+    margin-top: 0;
+}
+@media only screen and (max-width: 426px) {
+    .screen-a, .screen-b, .screen-c, .screen-d{
+        height: 600px;
+        padding-top: 20px;
+    }
+    #myCarousel{
+        height:600px;
+        
+    }
+    #Join_us, #Appreciations{
+        padding-top: 20px!important;
+    }
+    #Contacts{
+        padding-top:10px;
+    }
+}
+#About_us {
+    padding-top: 80px;
+    background-color: #d0021b;
+    color: white;
+}
+.dot {
+    color: white;
+    font-size: 45px;
+}
+.fa{
+    font-size:5vw;
+}
+.mission{
+    padding:15px;
+}
+#Appreciations {
+    color: black;
+    padding-top: 80px;
+    margin:0;
+}
+.news_icon {
+    margin:20px 0px;
+}
+#Contacts {
+    background: linear-gradient(-134deg, #000000 20%,#4b4d51 100%);
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+@media screen and (min-width: 992px) {
+    .social-networks {
+        border: none;
+        float: right;
+    }
+}
+.social-networks {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.social-div {
+   margin:0px;
+   padding:0px;
+}
+.social-network-icons {
+    color: white;
+    font-size: 40px;
+}
+.social-network-icons:hover, .social-network-icons:focus{
+    color: #d0021b;
+}
+.footer-li li a, .footer-a {
+    color: white;
+}
+
+
+
